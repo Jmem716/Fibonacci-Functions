@@ -21,7 +21,7 @@ public class FibonacciFunctions {
 				 }else { // if sequence numbers more than max break out
 					 break;
 				 }
-			 
+			  
 			 userInput.close(); // close the scanner 
 		}
 		long endRecursive = System.nanoTime(); // end recursive time
@@ -56,7 +56,7 @@ public class FibonacciFunctions {
 			 else
 				 break;
 		 }
-		 return b;
+   		 return b;
 	 }
 }
 
