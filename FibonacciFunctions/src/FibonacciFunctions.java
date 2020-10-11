@@ -41,8 +41,8 @@ public class FibonacciFunctions {
 		 
 		 return fibonacciRecursion(nthNumber - 1) + fibonacciRecursion(nthNumber - 2); 
 	 }
-	 
-	 
+	     
+	  
 	 public static int fibonacciIterative(int maxValue) { //use iteration
 		 int a = 0, b = 1, sum = 0;
 		 
