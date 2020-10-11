@@ -13,8 +13,8 @@ public class FibonacciFunctions {
 		 long startRecursive = System.nanoTime(); // start recursive time
 		 while(minValue < maxValue) {
 			 
-			 int returnedFibs = fibonacciRecursion(minValue); // calling recursive function with user input max and returning value
-
+			 int returnedFibs = fibonacciRecursive(minValue); // calling recursive function with user input max and returning value
+ 
 				 if(returnedFibs < maxValue) { // if sequence numbers are less than max proceed
 				 	System.out.println(returnedFibs); 
 				 	minValue++; 
@@ -35,11 +35,11 @@ public class FibonacciFunctions {
 	}
 	 
 	 
-	 public static int fibonacciRecursion(int nthNumber) { // use recursion  
+	 public static int fibonacciRecursive(int nthNumber) { // use recursion  
 		 if (nthNumber == 0) return 0;   // ensuring to begin with 0 and 1
 		 if (nthNumber == 1)  return 1; 
 		 
-		 return fibonacciRecursion(nthNumber - 1) + fibonacciRecursion(nthNumber - 2); 
+		 return fibonacciRecursive(nthNumber - 1) + fibonacciRecursive(nthNumber - 2); 
 	 }
 	     
 	  
